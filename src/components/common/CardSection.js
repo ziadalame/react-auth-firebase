@@ -3,7 +3,7 @@ import React from 'react';
 import { View } from 'react-native';
 
 // create a component
-const CradSection = (props) => {
+const CardSection = (props) => {
     return (
         <View style={styles.containerStyle}>
             {props.children}
@@ -25,4 +25,4 @@ const styles = {
 };
 
 //make this component available to the app
-export { CradSection };
+export { CardSection };
