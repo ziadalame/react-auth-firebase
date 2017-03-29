@@ -3,15 +3,13 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
 // create a component
-const Button = ({ onPress, children }) => {
-    return (
-        <TouchableOpacity onPress={onPress} style={styles.buttonStyle}>
-            <Text style={styles.textStyle}>
-                {children}
-            </Text>
-        </TouchableOpacity>
-    );
-};
+const Button = ({ onPress, children }) => (
+    <TouchableOpacity onPress={onPress} style={styles.buttonStyle}>
+        <Text style={styles.textStyle}>
+            {children}
+        </Text>
+    </TouchableOpacity>
+);
 
 // define your styles
 const styles = {
@@ -29,7 +27,6 @@ const styles = {
         alignSelf: 'center',
         color: '#007aff',
         fontSize: 16,
-        fontWeight: '600',
         paddingTop: 10,
         paddingBottom: 10
     }
